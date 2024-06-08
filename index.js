@@ -46,3 +46,23 @@ function showProjects(filter) {
       scoreLabels[index].textContent = range.value;
     });
   });
+  // Get all navigation links
+const navLinks = document.querySelectorAll('.list a');
+
+// Add click event listener to each navigation link
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default link behavior
+
+    const targetId = e.target.getAttribute('href');
+    if (targetId !== '#') {
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth', // Smooth scrolling animation
+          block: 'start' // Scroll to the top of the target element
+        });
+      }
+    }
+  });
+});
