@@ -2,12 +2,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-background-color: #526D82;
+/* background-color: #526D82; */
     /* background-color: #27374D;   */
 
 
 }
+body{
+  background-color: #526D82;
 
+}
+nav{
+
+}
  
 .list{
     float: right;
@@ -15,6 +21,7 @@ background-color: #526D82;
     margin: 0;
     /* border: 2px solid red; */
     position: sticky;
+
 }
 .list li{
     list-style-type: none;
@@ -66,7 +73,7 @@ background-color:transparent;
     margin-left: 400px;
 }
 .wow{
-    /* background-color: #27374D; */
+    background-color: #27374D;
 }
 .more .head h3{
     /* border: 2px solid red; */
@@ -184,6 +191,10 @@ input[type="range"]{
     color: #FF8E8F;
     transition: 1.5s;
   }
+  .serve{
+    background-color: #27374D;
+
+  }
   .mark{
     display: flex;
     align-items: center;
@@ -242,7 +253,9 @@ transition: 1.5s;
     align-items: center;
     justify-content: center;
     gap: 15px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    background-color: #27374D;
+
   }
   .blogs h3{
   }
@@ -303,3 +316,100 @@ color: #E178C5;
     gap: 20px;
 
   }
+/* For smaller screens (mobile devices) */
+@media only screen and (max-width: 767px) {
+  /* Adjustments for mobile */
+  .list {
+    float: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  section {
+    margin-left: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pic img {
+    max-width: 100%;
+  }
+
+  .skill {
+    flex-direction: column;
+    margin-left: 20px;
+    width: auto;
+  }
+
+  .set {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .portfolio-container {
+    flex-direction: column;
+  }
+
+  .mark {
+    flex-direction: column;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .mark i {
+    margin-left: 0;
+  }
+
+  .other {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .blogs {
+    flex-direction: column;
+  }
+
+  .blogs img {
+    max-width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  footer .social-links {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+/* For tablets and small desktops */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Adjustments for tablets and small desktops */
+  section {
+    margin-left: 50px;
+  }
+
+  .line {
+    margin-left: 50px;
+  }
+
+  .skill {
+    margin-left: 50px;
+  }
+}
+
+/* For larger desktops */
+@media only screen and (min-width: 1024px) {
+  /* Adjustments for larger desktops */
+  /* You can add any additional styles here if needed */
+}
